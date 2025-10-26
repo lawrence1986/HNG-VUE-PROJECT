@@ -1,100 +1,172 @@
-# TicketFlow – Multi-Framework Ticket App (Vue)
+🎫 TicketingSystem – Multi-Framework Ticket App (Vue)
 
-This repository contains the Vue 3 implementation of the TicketFlow Stage 2 challenge. Two additional framework builds live in companion repositories and ship the same user experience: a React SPA and a Twig (server-rendered) application.
+This repository contains the Vue 3 implementation of the TicketingSystem (Stage 2 Challenge).
+It’s part of a multi-framework suite with React and Twig (PHP) versions, each delivering the same user experience.
 
-## Implementations Overview
+🌐 Other Implementations
 
-- Vue (this repo)
-- React implementation: https://github.com/lawrence1986/ReactProject
-- Twig implementation: https://github.com/lawrence1986/TwigProject
+Vue (this repo)
+
+React: github.com/lawrence1986/ReactProject
+
+Twig (PHP): github.com/lawrence1986/TwigProject
+
+🧩 Frameworks & Libraries (Vue Version)
+
+Vue 3, TypeScript, and Vite
+
+Pinia – State management + persistence
+
+Vue Router – Protected routing
+
+Tailwind CSS 4 via @tailwindcss/vite – Styling & responsive layout
+
+Reka UI primitives + custom UI components (Button, Dialog, Select, etc.)
+
+Lucide Icons and vue-sonner – Toast notifications
+
+🚀 Quickstart (Vue)
+# 1️⃣ Install dependencies
+pnpm install
+
+# 2️⃣ Start the dev server
+pnpm dev
+
+# 3️⃣ Build for production
+pnpm build
+
+# 4️⃣ Preview production build
+pnpm preview
 
 
-## Frameworks & Libraries (Vue Version)
+By default, the app runs on http://localhost:5173
+.
 
-- Vue 3, TypeScript, Vite
-- Pinia for state management and persistence
-- Vue Router for protected routing
-- Tailwind CSS 4 via `@tailwindcss/vite` for styling and responsive layout
-- Reka UI primitives plus custom UI components (`Button`, `Dialog`, `Select`, etc.)
-- Lucide icons and `vue-sonner` for toast notifications
+🔁 Switching Between Frameworks
 
-## Vue Quickstart
+Clone each repository into sibling folders: Vue, React, Twig.
 
-1. Install dependencies: `pnpm install`
-2. Start the dev server: `pnpm dev`
-3. Build for production: `pnpm build`
-4. Preview the production build: `pnpm preview`
+Stop any running dev server before switching.
 
-The app runs on http://localhost:5173 by default.
+Run for each framework:
 
-## Switching Between Frameworks
+Framework	Command	Notes
+Vue	pnpm install && pnpm dev	Default port 5173
+React	pnpm install && pnpm dev	See React README
+Twig (PHP)	composer install then run dev server	See Twig README
 
-1. Clone each repository into sibling folders (Vue, React, Twig).
-2. Stop any running dev server before switching frameworks.
-3. Vue: `pnpm install` then `pnpm dev`.
-4. React: `pnpm install` then `pnpm dev` (see the React repo README for environment specifics).
-5. Twig: install PHP dependencies (`composer install`) and run the development server as described in the Twig README.
-6. Shared assets (hero wave SVG, decorative circles) are stored alongside each repo to maintain visual parity.
+Shared assets (hero wave SVGs, decorative circles) are duplicated per repo to ensure consistent visuals.
 
-## UI Layout Summary
+🧱 UI Layout Overview
 
-- Max-width 1440px container centered on large screens with responsive stacks on mobile.
-- Landing page hero includes a wavy SVG footer, overlapping decorative circles (`src/components/Cicle.vue`), and CTA buttons ("Login" and "Get Started").
-- Feature highlights and statistics use card-style boxes with soft shadows and rounded corners.
-- Dashboard summarises ticket counts with status-aware color coding.
-- Ticket management view presents cards, modal dialogs, and confirmation alerts for CRUD flows.
-- Shared footer (`src/components/Footer.vue`) persists across every route.
+Max-width: 1440px, centered layout
 
-## State & Data Flow
+Landing Page:
 
-- Authentication: `src/stores/auth.ts` tracks the active user and the directory of registered users via Pinia, persisting to `localStorage` using `ticketapp_session` (active session) and `ticketapp_users` (registered accounts).
-- Tickets: `src/stores/tickets.ts` owns the ticket list, offering create, update, and delete actions.
-- Composables (e.g., `src/composables/useAuth.ts`) expose store helpers to components and pages.
+Hero section with wavy SVG footer
 
-## Authentication Simulation
+Overlapping decorative circles (src/components/Circle.vue)
 
-- Login and signup forms validate email format, password length, and required fields before hitting the store.
-- Successful auth writes the session object to `localStorage` under the `ticketapp_session` key.
-- Logout clears the session and navigates back to the landing page.
-- Route guards protect `/dashboard` and `/dashboard/tickets`, redirecting unauthenticated visitors to `/auth/login` with a return URL query.
+CTA buttons: “Login” & “Get Started”
 
-## Ticket Validation & Feedback
+Feature Highlights: Card-style boxes with soft shadows & rounded corners
 
-- Required fields: `title` and `status` (`open`, `in_progress`, `closed`).
-- Description remains optional but must contain text when provided.
-- Modal forms block submission until validation passes and display inline error messaging.
-- Toast notifications communicate success or error states for authentication and ticket CRUD operations.
+Dashboard: Summarizes ticket counts with color-coded statuses
 
-## Error Handling Conventions
+Ticket Management: Cards, modals, and alerts for CRUD flows
 
-- Invalid credentials, duplicate accounts, and CRUD failures produce descriptive inline errors or toast notifications.
-- Route guard messaging guides users back to the login flow when sessions expire.
-- Local-only operations fall back gracefully if attempting to mutate missing tickets.
+Footer: src/components/Footer.vue — persistent across routes
 
-## Accessibility & Responsiveness
+🔄 State & Data Flow
 
-- Semantic structure for navigation, main content, and footer sections.
-- Visible focus states retained on all interactive elements.
-- Mobile navigation collapses behind an accessible toggle with `aria` attributes.
-- Status colors follow the spec: open → green, in_progress → amber, closed → gray, with contrast-checked palettes.
+Authentication:
 
-## Example Test Credentials
+src/stores/auth.ts → Manages users & sessions
 
-- Recommended: sign up with `demo@ticketflow.app` / `demo123` via the Signup form. The account is persisted locally, so you can reuse it for login tests.
+Uses Pinia + localStorage (ticketapp_session and ticketapp_users)
 
-## Known Issues & Notes
+Tickets:
 
-- LocalStorage persistence is browser-specific; clearing storage removes registered users and tickets.
-- Run only one framework dev server at a time to avoid port conflicts when switching implementations.
+src/stores/tickets.ts → Handles create, update, and delete actions
 
-## Project Structure Highlights
+Composables:
 
-- `src/pages` – route-level views (Landing, Auth, Dashboard, Tickets).
-- `src/components` – UI building blocks (Navbar, Footer, Ticket cards, dialogs, decorative circles).
-- `src/stores` – Pinia stores for authentication and tickets.
-- `public` / `src/assets` – shared branding elements for the wavy hero and decorative shapes.
+src/composables/useAuth.ts → Helper functions for authentication logic
 
-Refer to each companion repository for deployment notes and framework-specific nuances.
-Run pwsh command?
-Allow
-Skip
+🔐 Authentication Simulation
+
+Validates email format, password length, and required fields
+
+On success → session stored in localStorage (ticketapp_session)
+
+Logout: Clears session and redirects to /
+
+Protected Routes:
+
+/dashboard and /dashboard/tickets require authentication
+
+Unauthenticated users redirected to /auth/login?returnUrl=<path>
+
+✅ Ticket Validation & Feedback
+
+Required fields: title, status (open, in_progress, closed)
+
+Optional field: description (must contain text if provided)
+
+Validation: Inline error messages & modal-level checks
+
+Toasts: Success/error notifications for auth & CRUD actions
+
+⚙️ Error Handling
+
+Descriptive messages for invalid credentials, duplicate accounts, or CRUD errors
+
+Session expiry → route guards redirect to login
+
+Local operations (no backend) → graceful fallback on missing data
+
+♿ Accessibility & Responsiveness
+
+Semantic HTML for nav, main, and footer
+
+Visible focus states on all interactive elements
+
+Mobile navigation toggle with proper aria attributes
+
+Status color scheme:
+
+🟢 open → Green
+
+🟠 in_progress → Amber
+
+⚪ closed → Gray
+
+All colors are contrast-checked for accessibility
+
+👤 Example Test Account
+
+You can sign up directly or use this demo account:
+
+Email: demo@ticketingsystem.app
+Password: demo123
+
+
+Account is stored locally via localStorage and can be reused until cleared.
+
+⚠️ Known Issues & Notes
+
+LocalStorage: Clearing browser data removes users & tickets
+
+Framework Switching: Run only one dev server at a time to avoid port conflicts
+
+📂 Project Structure Highlights
+Path	Description
+src/pages	Route-level pages (Landing, Auth, Dashboard, Tickets)
+src/components	Reusable UI elements (Navbar, Footer, Ticket Cards, Modals)
+src/stores	Pinia stores for auth and tickets
+src/composables	Custom composables for store logic
+public / src/assets	Hero SVGs and decorative shapes
+🧭 Additional Notes
+
+For deployment instructions and environment-specific guidance,
+refer to the React and Twig companion repositories linked above.
