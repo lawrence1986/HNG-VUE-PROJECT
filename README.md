@@ -5,9 +5,9 @@ This repository contains the Vue 3 implementation of the TicketingSystem Stage 2
 ## Implementations Overview
 
 - Vue (this repo)
-- React: github.com/lawrence1986/ReactProject
+- React: [github.com/lawrence1986/ReactProject]
 
-- Twig (PHP): github.com/lawrence1986/TwigProject
+- Twig (PHP): [github.com/lawrence1986/TwigProject]
 
 ## Frameworks & Libraries (Vue Version)
 
