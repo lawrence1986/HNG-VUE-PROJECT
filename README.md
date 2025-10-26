@@ -5,8 +5,9 @@ This repository contains the Vue 3 implementation of the TicketFlow Stage 2 chal
 ## Implementations Overview
 
 - Vue (this repo)
-- React implementation: https://github.com/DammyCodes-all/hng-stage-2-react
-- Twig implementation: https://github.com/DammyCodes-all/hng-stage-2-twig
+- React implementation: https://github.com/lawrence1986/ReactProject
+- Twig implementation: https://github.com/lawrence1986/TwigProject
+
 
 ## Frameworks & Libraries (Vue Version)
 
