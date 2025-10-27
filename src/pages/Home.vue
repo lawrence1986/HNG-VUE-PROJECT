@@ -49,10 +49,9 @@
       class="w-full h-full flex-col justify-center items-center mt-10 p-6 gap-6 mb-10"
     >
       <h2 class="font-bold text-xl text-center">
-        Everything you need <br />
+       Monitor it all <br />
         <span class="font-normal text-sm text-gray-400">
-          Powerful features to help you manage tickets efficiently and keep your
-          team productive.
+         Experience smarter project management built for teams that value speed, clarity, and collaboration.
         </span>
       </h2>
       <div
