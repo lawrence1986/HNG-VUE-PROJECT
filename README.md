@@ -39,7 +39,14 @@ This repository contains the Vue 3 implementation of the TicketingSystem Stage 2
 
 The app runs on http://localhost:5173 by default.
 
-## Switching Between Frameworks
+
+### Multi-Framework Implementations
+
+| Framework      | Repository                                                         | Live URL                                                                                       |
+| -------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| **Vue.js**      | *This repository*                                                 |  [ticketingsystem-vue.netlify.app](https://ticketingsystem-vue.netlify.app/)              
+| **React**     | [HNG-REACT-PROJECT](https://github.com/lawrence1986/HNG-REACT-PROJECT) | [ticketingsystem-react.netlify.app](https://ticketingsystem-react.netlify.app/)             |
+| **Twig (PHP)** | [TwigProject](https://github.com/lawrence1986/TwigProject)         | [twigproject-production-e03.up.railway.app](https://twigproject-production-e03.up.railway.app) |
 
 1. Clone each repository into sibling folders (Vue, React, Twig).
 2. Stop any running dev server before switching frameworks.
@@ -106,7 +113,6 @@ The app runs on http://localhost:5173 by default.
 - `src/stores` – Pinia stores for authentication and tickets.
 - `public` / `src/assets` – shared branding elements for the wavy hero and decorative shapes.
 
-Refer to each companion repository for deployment notes and framework-specific nuances.
-Run pwsh command?
-Allow
-Skip
+## License
+- This project was developed as part of the HNG Stage 2 task.
+- No explicit license has been defined at this time.
