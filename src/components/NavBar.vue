@@ -3,7 +3,7 @@
     <div class="max-w-[1440px] mx-auto px-5 py-4">
       <div class="flex items-center justify-between gap-4">
         <RouterLink to="/" class="text-blue-600 text-2xl font-semibold">
-          Ticcket
+         E-Ticketing System
         </RouterLink>
 
         <button
