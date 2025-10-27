@@ -8,13 +8,11 @@
       >
         <div class="mx-auto text-center space-y-6 text-sm text-gray-500">
           <p class="text-2xl font-semibold text-black">
-            Manage Your Tickets with
-            <span class="text-blue-600"> Confidence</span>
+            Confidently in
+            <span class="text-blue-600"> Control</span>
           </p>
           <p class="max-w-prose mx-auto">
-            The modern ticket management system that helps teams stay organized,
-            resolve issues faster, and deliver exceptional support. Get started
-            in seconds.
+            A next-generation ticket management system built for efficiency. Empower your team to stay organized, resolve issues faster, and provide exceptional support every time. Get started in seconds.
           </p>
         </div>
         <div class="flex gap-2">

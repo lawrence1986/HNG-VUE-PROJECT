@@ -1,17 +1,17 @@
 export const LandingPageBoxes = [
   {
-    title: "Track everything",
+    title: "Monitor it all",
     description:
-      "Manage tickets, tasks, and projects all in one place with our intuitive interface.",
+      "Experience smarter project management built for teams that value speed, clarity, and collaboration..",
   },
   {
-    title: "Lightning fast",
+    title: "Speed That Works for You.",
     description:
-      "Built for speed. Create, update, and resolve tickets in seconds..",
+      "From ticket creation to resolution, every click is instant.",
   },
   {
-    title: "Stay organized",
+    title: "Stay in Control",
     description:
-      "Keep your workspace tidy and focused with powerful organizational tools.",
+      "Bring clarity to your workflow with smart, built-in organization features.",
   },
 ];
