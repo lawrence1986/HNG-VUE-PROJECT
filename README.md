@@ -3,9 +3,9 @@
 <p align="center">
   <!-- Typing SVG by Lawrence-Maduabuchi - https://github.com/Lawrence-Maduabuchi/readme-typing-svg -->
   <a href="https://github.com/Lawrence-Maduabuchi/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Front-End%20web%20developer;Back-End%20EngineDev;Chat%20UI%2FUX%20Designing;Scalable%2B%20%2System%20codec%20;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&pause=1000&size=22" /></a>
+    <img src="https://readme-typing-svg.demolab.com/?lines=Front-End%20web%20developer;Chat%20UI%2FUX%20Designing;Scalable%2B%20%2System%20codec%20;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&pause=1000&size=22" /></a>
 </p>
-<h3 align="center"> TicketingSystem – Multi-Framework Ticket  💻 App (Vue), that harnesses the power of Vue.js  🏗🏛 Typrsccript 🎙, and vit!</h3>
+<h3 align="center"> TicketingSystem – Multi-Framework Ticket  💻 App (Vue), that harnesses the power of Vue.js  🏗🏛 TypeScript 🎙, and Vite!</h3>
 <hr>
 
 
