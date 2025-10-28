@@ -3,7 +3,7 @@
 <p align="center">
   <!-- Typing SVG by Lawrence-Maduabuchi - https://github.com/Lawrence-Maduabuchi/readme-typing-svg -->
   <a href="https://github.com/Lawrence-Maduabuchi/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Front-End%20web%20developer;Chat%20UI%2FUX%20Designing;Scalable%2B%20%2System%20codec%20;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&pause=1000&size=22" /></a>
+    <img src="https://readme-typing-svg.demolab.com/?lines=Front-End%20web%20developer;Ticketing%20Sys%tem%;Scalable%2B%20%2System%20codec%20;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&pause=1000&size=22" /></a>
 </p>
 <h3 align="center"> TicketingSystem – Multi-Framework Ticket  💻 App (Vue), that harnesses the power of Vue.js  🏗🏛 TypeScript 🎙, and Vite!</h3>
 <hr>
@@ -39,7 +39,14 @@ This repository contains the Vue 3 implementation of the TicketingSystem Stage 2
 
 The app runs on http://localhost:5173 by default.
 
-## Switching Between Frameworks
+
+### Multi-Framework Implementations
+
+| Framework      | Repository                                                         | Live URL                                                                                       |
+| -------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| **Vue.js**      | *This repository*                                                 |  [ticketingsystem-vue.netlify.app](https://ticketingsystem-vue.netlify.app/)              
+| **React**     | [HNG-REACT-PROJECT](https://github.com/lawrence1986/HNG-REACT-PROJECT) | [ticketingsystem-react.netlify.app](https://ticketingsystem-react.netlify.app/)             |
+| **Twig (PHP)** | [TwigProject](https://github.com/lawrence1986/TwigProject)         | [twigproject-production-e03.up.railway.app](https://twigproject-production-e03.up.railway.app) |
 
 1. Clone each repository into sibling folders (Vue, React, Twig).
 2. Stop any running dev server before switching frameworks.
@@ -106,7 +113,6 @@ The app runs on http://localhost:5173 by default.
 - `src/stores` – Pinia stores for authentication and tickets.
 - `public` / `src/assets` – shared branding elements for the wavy hero and decorative shapes.
 
-Refer to each companion repository for deployment notes and framework-specific nuances.
-Run pwsh command?
-Allow
-Skip
+## License
+- This project was developed as part of the HNG Stage 2 task.
+- No explicit license has been defined at this time.
