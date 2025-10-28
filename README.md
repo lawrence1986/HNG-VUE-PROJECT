@@ -99,7 +99,7 @@ The app runs on http://localhost:5173 by default.
 
 ## Example Test Credentials
 
-- Recommended: sign up with `demo@ticketflow.app` / `demo123` via the Signup form. The account is persisted locally, so you can reuse it for login tests.
+- Recommended: sign up with `test@build.app` / `LawrenceM` via the Signup form. The account is persisted locally, so you can reuse it for login tests.
 
 ## Known Issues & Notes
 
